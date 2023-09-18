@@ -1,5 +1,5 @@
 import React from 'react';
-import "./index.css"
+import './index.css';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 const CountdownTimer = ({ selectedTime, countdownRef, resetClicked }) => {
   const renderTime = ({ remainingTime }) => {
@@ -22,8 +22,15 @@ const CountdownTimer = ({ selectedTime, countdownRef, resetClicked }) => {
         <CountdownCircleTimer
           isPlaying={resetClicked}
           duration={selectedTime}
-          colors={['#', '#F7B801', '#A30000', '#A30000']}
-          colorsTime={[7, 5, 2, 0]}
+          colors={[
+            '#0d4f15',
+            '#e81a43',
+            '#F7B801',
+            '#ce28d1',
+            '#A30000',
+            '#f70e0a',
+          ]}
+          colorsTime={[17, 15, 13, 10,7, 5]}
         >
           {renderTime}
         </CountdownCircleTimer>

@@ -10,7 +10,7 @@ function App() {
   const [selectedTime, setSelectedTime] = useState(10);
   const [resetClicked, setResetClicked] = useState(false);
   const countdownRef = useRef(null);
-  console.log(countdownRef);
+   
 
   const onClickReset = () => {
     console.log('Resetting to', selectedTime, 'seconds');
